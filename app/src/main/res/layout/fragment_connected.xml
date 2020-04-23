@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".connected">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connected Devices"
+        android:id="@+id/connected"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="@drawable/edit_round2"/>
+    <ListView
+        android:layout_below="@id/connected"
+        android:id="@+id/connectedList"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Begin"
+        android:text="Begin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edit_round3"
+        android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>

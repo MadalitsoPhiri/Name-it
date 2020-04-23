@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScorePage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/score"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_light"
+        >
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/scoreCount"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You entered the following:"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="5dp"/>
+        <ListView
+            android:layout_below="@id/score"
+            android:id="@+id/naration"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="NEXT"
+        android:textColor="@color/colorWhite"
+        android:onClick="next"
+        android:background="@color/colorPrimaryDark"
+        />
+</RelativeLayout>
