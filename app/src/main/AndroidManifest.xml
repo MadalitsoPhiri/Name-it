@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.nouned">
+    package="com.example.nameit">
 
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -20,11 +20,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".settings"
+            android:name="com.example.nameit.settings"
             android:label="@string/menu_settings"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName="com.example.nameit.MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.nameit.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
